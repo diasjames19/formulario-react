@@ -8,7 +8,7 @@ No Treinamento tem como objetivo, criar um front-end da aplicação CRUD.
 Depois vincular com Back-end carregando dados do banco.
 
 
-### `Tecnologia`
+### `Tecnologias`
 
 - ReactJS
 - Bootstrap-React
