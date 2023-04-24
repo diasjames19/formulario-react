@@ -1,6 +1,6 @@
 # Treinamento de ReactJS
 
-Criando um CRUD com ReactJA
+Criando um CRUD com ReactJS
 
 ## `Objetivo`
 
