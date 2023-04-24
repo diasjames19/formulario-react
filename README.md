@@ -1,4 +1,4 @@
-# Treinamento de ReactJA
+# Treinamento de ReactJS
 
 Criando um CRUD com ReactJA
 
