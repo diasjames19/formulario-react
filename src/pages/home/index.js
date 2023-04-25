@@ -4,13 +4,15 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Dados from '../../components/DadosTable'
+
 
 const  Page=()=>{
     return(
         <div>
            <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand>Listagem de Dados</Navbar.Brand>
+        <Navbar.Brand>DASHBOARD</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -32,6 +34,7 @@ const  Page=()=>{
       </Container>
     </Navbar>
     <hr/>
+    <Dados/>
         </div>
     );
 

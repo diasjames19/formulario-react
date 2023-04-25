@@ -9,14 +9,14 @@ import Routes from "../../../Router/Routes";
 const Header = ()=>{
     return(
         <div>
-             <h1>Minha Aplicação de CRUD</h1>
+             <h1>Solicitação de Ordem de Serviço</h1>
              <BrowserRouter>
                 <Nav variant="pills"> 
-                    <Nav.Item>
+                    <Nav.Item size="sm">
                         <Nav.Link as={Link} to="/" eventKey="/">Pagina Inicial</Nav.Link>
                     </Nav.Item>
-                   <Nav.Item>
-                   <    Nav.Link as={Link} to="/cadastro" eventKey="/cadastro">Cadastros</Nav.Link>
+                   <Nav.Item size="sm">
+                   <    Nav.Link as={Link} to="/cadastro" eventKey="/cadastro" >Cadastros</Nav.Link>
                    </Nav.Item>
                 </Nav>
                 <Routes/>
