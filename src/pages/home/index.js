@@ -12,7 +12,7 @@ const  Page=()=>{
         <div>
            <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand>DASHBOARD</Navbar.Brand>
+        <Navbar.Brand>ORDENS</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

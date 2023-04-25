@@ -22,7 +22,7 @@ const Dados=()=>{
                     <tr>
                         <td>0001</td>
                         <td>Sorreto</td>
-                        <td>Sergio</td>
+                        <td>Adm Sorrento</td>
                         <td>Civil</td>
                         <td>01/01/2000</td>
                         <td><Button variant="warning" size="sm">Editar</Button> <Button variant="danger" size="sm">Excluir</Button> <Button variant="primary" size="sm">Exibir</Button></td>
@@ -30,7 +30,7 @@ const Dados=()=>{
                     <tr>
                         <td>0002</td>
                         <td>Savona</td>
-                        <td>Victor</td>
+                        <td>Adm Savona</td>
                         <td>Civil</td>
                         <td>01/02/2000</td>
                         <td><Button variant="warning" size="sm">Editar</Button> <Button variant="danger" size="sm">Excluir</Button> <Button variant="primary" size="sm">Exibir</Button></td>
@@ -38,7 +38,7 @@ const Dados=()=>{
                     <tr>
                         <td>0003</td>
                         <td>Maggiore</td>
-                        <td>Edclei Caldas</td>
+                        <td>Adm Maggiore</td>
                         <td>Civil</td>
                         <td>01/03/2000</td>
                         <td><Button variant="warning" size="sm">Editar</Button> <Button variant="danger" size="sm">Excluir</Button> <Button variant="primary" size="sm">Exibir</Button></td>

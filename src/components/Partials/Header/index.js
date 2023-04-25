@@ -9,7 +9,7 @@ import Routes from "../../../Router/Routes";
 const Header = ()=>{
     return(
         <div>
-             <h1>Solicitação de Ordem de Serviço</h1>
+             <h1>Solicitação de Atendimento</h1>
              <BrowserRouter>
                 <Nav variant="pills"> 
                     <Nav.Item size="sm">
