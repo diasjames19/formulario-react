@@ -1,11 +1,17 @@
 import './App.css';
+import { Template } from './components/MainComponents'
 import Header from './components/Partials/Header';
+import { BrowserRouter} from "react-router-dom";
+import Routes from './Router/Routes';
 
-const Page = ()=> {
+const Page = (props)=> {
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <BrowserRouter>
+      <Template>
+            <Header/>
+            <Routes/>
+      </Template>
+    </BrowserRouter>
   );
 }
 

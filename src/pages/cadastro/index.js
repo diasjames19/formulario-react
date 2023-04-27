@@ -1,10 +1,9 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
- const  Page = ()=>{
+ const  Page =()=>{
     return(
         <div>
             <Navbar bg="light" expand="lg">
@@ -22,6 +21,7 @@ import Navbar from 'react-bootstrap/Navbar';
       </Container>
     </Navbar>
     <hr/>
+      teste
         </div>
     );
 
