@@ -3,8 +3,10 @@ import { Template } from './components/MainComponents'
 import Header from './components/Partials/Header';
 import { BrowserRouter} from "react-router-dom";
 import Routes from './Router/Routes';
+import React from "react";
 
-const Page = (props)=> {
+
+const Page = ()=> {  
   return (
     <BrowserRouter>
       <Template>
@@ -12,7 +14,7 @@ const Page = (props)=> {
             <Routes/>
       </Template>
     </BrowserRouter>
-  );
+  )
 }
 
 export default Page;

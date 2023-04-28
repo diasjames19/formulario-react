@@ -11,7 +11,7 @@ const Page=()=>{
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Usuario</Form.Label>
-                            <Form.Control type="email" placeholder="Usuario" />
+                            <Form.Control type="text" placeholder="Usuario" />
                             <Form.Text className="text-muted">
                             </Form.Text>
                     </Form.Group>
