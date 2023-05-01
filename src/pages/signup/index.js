@@ -1,4 +1,4 @@
-import React,{ useEffect ,useState} from "react";
+import React,{ useEffect, useState } from "react";
 import { 
         PageContainer, 
         PageTitle, 
@@ -19,7 +19,9 @@ const Page=()=>{
     const [disabled, setDisabled] = useState('');
     const [confirmPassword, setconfirmPassword] = useState('');
     const [error, setError]=useState('');
+    useEffect(()=>{
 
+    },[])
     const handleSubmit = async (e)=>{
         e.preventDefault();
         setDisabled(true);
@@ -30,17 +32,19 @@ const Page=()=>{
             return;
 
         }
-        const json = await api.register(
+        const json = await api.register({
             funcao,
             login,
             password
-        );
+        });
         if(json.error){
             setError(json.error);
         }else{
             doLogin(json.token);
             window.location.href = '/'
+
         }
+            setDisabled(false);
     }
     return(
    
@@ -52,10 +56,10 @@ const Page=()=>{
                     </ErrorMessage>
                 
                 }
-                <Form onSubmit={handleSubmit()}>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form onSubmit={handleSubmit}>
+                    <Form.Group className="mb-3" >
                             <Form.Label>Função</Form.Label>
-                            <Form.Control id="funcao" 
+                            <Form.Control  
                                     type="text"
                                     disabled={disabled}
                                     value={funcao} 
@@ -65,9 +69,9 @@ const Page=()=>{
                             <Form.Text className="text-muted">
                             </Form.Text>
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="mb-3" >
                             <Form.Label> Login</Form.Label>
-                            <Form.Control id="login" 
+                            <Form.Control  
                             type="text" 
                             disabled={disabled}
                             value={login} 
@@ -77,9 +81,9 @@ const Page=()=>{
                             <Form.Text className="text-muted">
                             </Form.Text>
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Group className="mb-3" >
                         <Form.Label>Senha</Form.Label>
-                        <Form.Control id="senha" 
+                        <Form.Control 
                          type="password"
                          disabled={disabled}
                          value={password} 
@@ -87,7 +91,7 @@ const Page=()=>{
                          required
                          placeholder="senha" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Group className="mb-3" >
                         <Form.Label>Confirmar Senha</Form.Label>
                         <Form.Control id="senha" type="password"
                         disabled={disabled}

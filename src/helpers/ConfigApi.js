@@ -1,8 +1,14 @@
 import Cookies from "js-cookie";
 import qs from 'qs';
-import api from "../services/backApi";
+import axios from 'axios';
 
 
+
+const urlBackEnd = axios.create({
+        baseURL:'http://localhost:4001'
+});
+
+/*
 const chamadaFetchApi = async(endpoint, body)=>{
 
     if(!body.token){
@@ -15,23 +21,22 @@ const chamadaFetchApi = async(endpoint, body)=>{
     const res = await api
                         .post(endpoint,{
 
-    })*/
+    })
 }
-
+*/
 
 const configApi ={
 
-    register: async(funcao,login, password)=>{
-        const json = await api
+    register: async(funcao,login,password)=>{
+        let dados = {funcao,login,password};
+        const res = await axios
                             .post(
-                                '/user/signup',
-                                {
-                                    funcao,
-                                    login,
-                                    password
-                                }
-                            );
-                            return json;
+                                '/user/signup',dados                     
+                                
+                            ).then()
+                             
+                            console.log(res);
+                            return res;
 
     }
 
