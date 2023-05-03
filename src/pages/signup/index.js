@@ -32,11 +32,11 @@ const Page=()=>{
             return;
 
         }
-        const json = await api.register({
+        const json = await api.register(
             funcao,
             login,
-            password
-        });
+            password,
+        );
         if(json.error){
             setError(json.error);
         }else{
@@ -45,6 +45,8 @@ const Page=()=>{
 
         }
             setDisabled(false);
+
+            console.log(json)
     }
     return(
    
@@ -59,7 +61,8 @@ const Page=()=>{
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" >
                             <Form.Label>Função</Form.Label>
-                            <Form.Control  
+                            <Form.Control 
+                                    id="funcao" 
                                     type="text"
                                     disabled={disabled}
                                     value={funcao} 
@@ -71,7 +74,8 @@ const Page=()=>{
                     </Form.Group>
                     <Form.Group className="mb-3" >
                             <Form.Label> Login</Form.Label>
-                            <Form.Control  
+                            <Form.Control 
+                            id="login" 
                             type="text" 
                             disabled={disabled}
                             value={login} 
@@ -84,6 +88,7 @@ const Page=()=>{
                     <Form.Group className="mb-3" >
                         <Form.Label>Senha</Form.Label>
                         <Form.Control 
+                         id="password"
                          type="password"
                          disabled={disabled}
                          value={password} 
